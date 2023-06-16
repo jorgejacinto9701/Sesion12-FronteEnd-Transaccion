@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-model-cliente',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./model-cliente.component.css']
 })
 export class ModelClienteComponent {
+
+
+
+
 
 }

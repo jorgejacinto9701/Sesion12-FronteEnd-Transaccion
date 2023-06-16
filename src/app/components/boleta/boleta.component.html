@@ -1,1 +1,54 @@
-<p>boleta works!</p>
+<div class="container mat-elevation-z8" >
+   
+    <div class="row">
+        <mat-toolbar color="primary" >    
+        <span>Registro Boleta</span>    
+        </mat-toolbar>  
+    </div>
+
+    <div class="container" style="margin-top: 2%;">
+        <div class="row">
+            <mat-label>Cliente</mat-label> 
+        </div>
+        <div class="row" style="margin-top: 3%">
+            <mat-form-field class="col-md-5">
+                <mat-label>Nombre</mat-label>
+                <input  matInput >
+            </mat-form-field>
+            <mat-form-field class="col-md-5">
+                <mat-label>Apellido</mat-label>
+                <input  matInput >
+            </mat-form-field>
+           <button mat-raised-button color="primary" (click)="buscaCliente()" type="button" class='btn btn-primary btn-sm' style="width: 20px">...</button>
+        </div>
+    </div> 
+
+    <div class="container" style="margin-top: 2%;">
+        <div class="row">
+            <mat-label>Producto</mat-label> 
+        </div>
+        <div class="row" style="margin-top: 3%">
+            <mat-form-field class="col-md-4">
+                <mat-label>Nombre</mat-label>
+                <input  matInput >
+            </mat-form-field>
+            <mat-form-field class="col-md-2">
+                <mat-label>Precio</mat-label>
+                <input  matInput >
+            </mat-form-field>
+            <mat-form-field class="col-md-2">
+                <mat-label>Stock</mat-label>
+                <input  matInput >
+            </mat-form-field>
+            <mat-form-field class="col-md-2">
+                <mat-label>Cantidad</mat-label>
+                <input  matInput >
+            </mat-form-field>
+           <button mat-raised-button color="primary" (click)="buscaProducto()" type="button" class='btn btn-primary btn-sm' style="width: 20px">...</button>
+           <button mat-raised-button color="primary" type="button" class='btn btn-primary btn-sm' style="width: 100px">Agregar</button>
+        </div>
+    </div> 
+
+ </div>   
+
+ 
