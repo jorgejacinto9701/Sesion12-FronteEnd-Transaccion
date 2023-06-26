@@ -25,7 +25,7 @@ import { AppMaterialModule } from './app.material.module';
     HttpClientModule,
     CommonModule,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
     AppRoutingModule,
     AppMaterialModule
   ],

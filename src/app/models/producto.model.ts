@@ -6,6 +6,7 @@ export class Producto {
     nombre ?: string;
     precio ?: number;
     stock ?: number;
+    cantidad ?: number;
     categoria ?:Categoria;
     
 }

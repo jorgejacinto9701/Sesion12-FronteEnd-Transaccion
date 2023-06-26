@@ -8,7 +8,7 @@
     <div class="row" style="margin-top: 3%">
       <mat-form-field class="col-md-5">
           <mat-label >Nombre</mat-label>
-          <input  matInput >
+          <input  matInput #txtVal (keyup)="applyFilter()" [(ngModel)] ="filtro" >
       </mat-form-field>
   </div>
 
@@ -33,8 +33,8 @@
               <ng-container matColumnDef="actions">
                 <mat-header-cell  mat-header-cell *matHeaderCellDef >&nbsp;</mat-header-cell>
                 <mat-cell *matCellDef="let aux; let i=index;">
-                    <button mat-icon-button color="accent" >
-                        <mat-icon aria-label="Delete">Seleccione</mat-icon>
+                    <button mat-raised-button color="primary"  (click)="seleccioneProducto(aux)">
+                        <mat-icon>check_circle_outline</mat-icon>
                     </button>
                 </mat-cell>
               </ng-container>
